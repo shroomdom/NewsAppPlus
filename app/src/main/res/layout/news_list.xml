@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main page layout for single news item -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        style="@style/newsTitleStyle"
+        android:text="@string/title" />
+
+    <TextView
+        android:id="@+id/author_text_view"
+        android:layout_below="@+id/title_text_view"
+        style="@style/newsAuthorStyle"
+        android:text= "@string/author" />
+
+    <TextView
+        android:id="@+id/category_text_view"
+        style="@style/newsCategoryStyle"
+        android:layout_below="@+id/author_text_view"
+        android:text="@string/category_name" />
+
+    <TextView
+        android:id="@+id/date_text_view"
+        style="@style/newsDateStyle"
+        android:layout_below="@id/author_text_view"
+        android:text="@string/date_published" />
+
+</RelativeLayout>
