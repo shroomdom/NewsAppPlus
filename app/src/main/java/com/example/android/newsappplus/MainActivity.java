@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     private TextView errorMessageView;
 
     @Override
-    // This method initialize the contents of the Activity's options menu.
+    // This method initializes the contents of the Activity's options menu.
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the Options Menu we specified in XML
+        // Inflate the Options Menu specified in XML
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
@@ -101,14 +101,15 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
         String urlBeginning = "http://content.guardianapis.com/search?";
 
-        // getString retrieves a String value from the preferences. The second parameter is the default value for this preference.
+        // getString retrieves a String value from the preferences.
+        // The second parameter is the default value for this preference.
         String articleCount = sharedPrefs.getString(
                 getString(R.string.settings_article_count_key),
                 getString(R.string.settings_article_count_default));
 
-        String newsSections  = sharedPrefs.getString(
-                getString(R.string.settings_order_by_key),
-                getString(R.string.settings_order_by_default)
+        String newsSections = sharedPrefs.getString(
+                getString(R.string.settings_choose_news_section_key),
+                getString(R.string.settings_choose_news_section_default)
         );
 
         // parse breaks apart the URI string that's passed into its parameter
@@ -118,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         // buildUpon prepares the baseUri that we just parsed so we can add query parameters to it
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
-        // Append query parameter and its value. For example, the `format=geojson`
+        // Append query parameter and its value
         uriBuilder.appendQueryParameter("q", "debates");
         uriBuilder.appendQueryParameter("section", newsSections);
         uriBuilder.appendQueryParameter("show-tags", "contributor");

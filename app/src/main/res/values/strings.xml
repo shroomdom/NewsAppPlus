@@ -11,16 +11,17 @@
     <string name="settings_article_count_label">Select Desired Article Count</string>
     <string name="settings_article_count_key" translatable="false">article_count_key</string>
     <string name="settings_article_count_default" translatable="false">10</string>
-    <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
-    <string name="settings_order_by_label">Select Desired News Section</string>
-    <string name="settings_order_by_key" translatable="false">news_section_key</string>
-    <string name="settings_order_by_default" translatable="false">@string/settings_choose_news_section_value</string>
 
-    <!-- Label for order-by magnitude option [CHAR LIMIT=20] -->
-    <string name="settings_choose_news_section_label">Politics</string>
-    <string name="settings_choose_news_section_value" translatable="false">politics</string>
+    <!-- Strings for desired news section option [CHAR LIMIT=30] -->
+    <string name="settings_choose_news_section_label">Select Desired News Section</string>
+    <string name="settings_choose_news_section_key" translatable="false">news_section_key</string>
+    <string name="settings_choose_news_section_default" translatable="false">@string/settings_choose_politics_section_value</string>
 
-    <!-- Label for order-by most recent option [CHAR LIMIT=20] -->
-    <string name="settings_order_by_most_recent_label">Science</string>
-    <string name="settings_order_by_most_recent_value" translatable="false">science</string>
+    <!-- Label for politics news section option [CHAR LIMIT=20] -->
+    <string name="settings_choose_politics_section_label">Politics</string>
+    <string name="settings_choose_politics_section_value" translatable="false">politics</string>
+
+    <!-- Label for science news section option [CHAR LIMIT=20] -->
+    <string name="settings_choose_science_section_label">Science</string>
+    <string name="settings_choose_science_section_value" translatable="false">science</string>
 </resources>

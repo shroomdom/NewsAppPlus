@@ -13,9 +13,9 @@
 
     <TextView
         android:id="@+id/author_text_view"
-        android:layout_below="@+id/title_text_view"
         style="@style/newsAuthorStyle"
-        android:text= "@string/author" />
+        android:layout_below="@+id/title_text_view"
+        android:text="@string/author" />
 
     <TextView
         android:id="@+id/category_text_view"

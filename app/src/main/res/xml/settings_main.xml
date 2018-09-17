@@ -11,10 +11,10 @@
         android:title="@string/settings_article_count_label" />
 
     <ListPreference
-        android:defaultValue="@string/settings_order_by_default"
+        android:defaultValue="@string/settings_choose_news_section_default"
         android:entries="@array/settings_order_by_labels"
         android:entryValues="@array/settings_order_by_values"
-        android:key="@string/settings_order_by_key"
-        android:title="@string/settings_order_by_label" />
+        android:key="@string/settings_choose_news_section_key"
+        android:title="@string/settings_choose_news_section_label" />
 
 </PreferenceScreen>
